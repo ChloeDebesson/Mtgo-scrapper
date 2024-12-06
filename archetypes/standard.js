@@ -50,6 +50,10 @@ const detectArchetype = (decklist) => {
     return "Convoke";
   }
 
+  if (countCard('Tolarian Terror') >= 4 && countCard('Eddymurk Crab') >= 4) {
+    return "Simic Tempo";
+  }
+
   return "Others";
 };
 
